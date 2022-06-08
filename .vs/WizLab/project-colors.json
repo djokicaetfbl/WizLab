@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "37fbf906-4b75-48e2-8960-079b829c0482": {
+      "ProjectGuid": "37fbf906-4b75-48e2-8960-079b829c0482",
+      "DisplayName": "WizLib",
+      "ColorIndex": 0
+    },
+    "e0c2fffc-7fbd-4535-8b35-370fe16d1a5b": {
+      "ProjectGuid": "e0c2fffc-7fbd-4535-8b35-370fe16d1a5b",
+      "DisplayName": "WizLib_DataAccess",
+      "ColorIndex": 1
+    },
+    "e874c051-d692-4eca-82c8-fc44c51cc58e": {
+      "ProjectGuid": "e874c051-d692-4eca-82c8-fc44c51cc58e",
+      "DisplayName": "WizLib_Model",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,12 @@
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\bin\Debug\net5.0\WizLib_Model.deps.json
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\bin\Debug\net5.0\WizLib_Model.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\bin\Debug\net5.0\WizLib_Model.pdb
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\WizLib_Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\WizLib_Model.AssemblyInfoInputs.cache
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\WizLib_Model.AssemblyInfo.cs
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\WizLib_Model.csproj.CoreCompileInputs.cache
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\WizLib_Model.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\ref\WizLib_Model.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\WizLib_Model.pdb
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\WizLib_Model.csproj.AssemblyReference.cache
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLib_Model\obj\Debug\net5.0\refint\WizLib_Model.dll
