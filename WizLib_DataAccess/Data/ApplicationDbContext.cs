@@ -16,7 +16,7 @@ namespace WizLib_DataAccess.Data
         }
         //DbContext je odgovoran za kreiranje bindinga izmedju nase aplikacije i SQL servera.
 
-        //public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         public DbSet<Genre> Genres { get; set; }
 
