@@ -434,3 +434,14 @@ C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Raz
 C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Razor\Views\Author\Upsert.cshtml.g.cs
 C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Razor\Views\Publisher\Upsert.cshtml.g.cs
 C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Razor\Views\Book\Index.cshtml.g.cs
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Razor\Views\Book\Upsert.cshtml.g.cs
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Razor\Views\Book\Details.cshtml.g.cs

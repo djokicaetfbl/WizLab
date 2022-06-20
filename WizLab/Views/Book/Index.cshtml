@@ -24,11 +24,12 @@
                     <th>
                         Title
                     </th>
+                    <th>Price</th>
                    
-                    @*<th>
+                    <th>
                         Publisher
                     </th>
-                    <th>
+                    @*<th>
                         Authors
                     </th>*@
                     <th></th>
@@ -38,6 +39,12 @@
             <tr>
                 <td>
                     @item.Title
+                </td>
+                <td>
+                    @item.Price
+                </td>
+                <td>
+                    @item.Publisher.Name
                 </td>
                 @*<td>
                     @item.Publisher.Name
