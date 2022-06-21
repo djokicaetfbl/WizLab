@@ -445,3 +445,4 @@ C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Raz
 C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Razor\Views\Book\Details.cshtml.g.cs
+C:\Users\djordje.palavestra\Desktop\EFCoreApp\WizLab\WizLab\obj\Debug\net5.0\Razor\Views\Book\ManageAuthors.cshtml.g.cs
