@@ -16,6 +16,8 @@ namespace WizLib_DataAccess.Data
         }
         //DbContext je odgovoran za kreiranje bindinga izmedju nase aplikacije i SQL servera.
 
+        public DbSet<BookDetailsFromView> BookDetailsFromViews { get; set; }
+
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Genre> Genres { get; set; }
@@ -48,6 +50,8 @@ namespace WizLib_DataAccess.Data
             modelBuilder.ApplyConfiguration(new FluentBookAuthorConfig());
             modelBuilder.ApplyConfiguration(new FluentBookDetailConfig());
             modelBuilder.ApplyConfiguration(new FluentPublisherConfig());
+
+            modelBuilder.Entity<BookDetailsFromView>().HasNoKey().ToView("GetOnlyBookDetails"); // kada nema primarnog kljuca Tracker nije ukljucen
 
         }
 

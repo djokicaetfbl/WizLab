@@ -212,32 +212,52 @@ namespace WizLib.Controllers
 
             //var bookCount2 = _db.Books.Count();
 
-            IEnumerable<Book> BookList1 = _db.Books;
-            var FilteredBook1 = BookList1.Where(x => x.Price > 500).ToList();
+            //IEnumerable<Book> BookList1 = _db.Books;
+            //var FilteredBook1 = BookList1.Where(x => x.Price > 500).ToList();
 
-            IQueryable<Book> BookList2 = _db.Books;
-            var FilteredBook2 = BookList2.Where(x => x.Price > 500).ToList();
+            //IQueryable<Book> BookList2 = _db.Books;
+            //var FilteredBook2 = BookList2.Where(x => x.Price > 500).ToList();
 
             //var BookList3 = _db.Books;
             //var FilteredBook3 = BookList1.Where(x => x.Price > 500).ToList();
 
-            var category = _db.Categories.FirstOrDefault();
-            _db.Entry(category).State = EntityState.Modified; // natjerali smo da izvrsi update query iako nista nismo promjenili
+            //var category = _db.Categories.FirstOrDefault();
+            //_db.Entry(category).State = EntityState.Modified; // natjerali smo da izvrsi update query iako nista nismo promjenili
 
-            _db.SaveChanges();
+            //_db.SaveChanges();
 
-            var bookTemp1 = _db.Books.Include(x => x.BookDetail).FirstOrDefault(y => y.Book_Id == 4);
-            bookTemp1.BookDetail.NumberOfChapters = 2222;
+            //var bookTemp1 = _db.Books.Include(x => x.BookDetail).FirstOrDefault(y => y.Book_Id == 4);
+            //bookTemp1.BookDetail.NumberOfChapters = 2222;
 
-            _db.Books.Update(bookTemp1); // updateuje sve atribute
-            _db.SaveChanges();
+            //_db.Books.Update(bookTemp1); // updateuje sve atribute
+            //_db.SaveChanges();
 
-            var bookTemp2 = _db.Books.Include(x => x.BookDetail).FirstOrDefault(y => y.Book_Id == 4);
-            bookTemp2.BookDetail.Weight = 3333;
+            //var bookTemp2 = _db.Books.Include(x => x.BookDetail).FirstOrDefault(y => y.Book_Id == 4);
+            //bookTemp2.BookDetail.Weight = 3333;
 
-            _db.Books.Attach(bookTemp2); // updateujemo samo propertije koji su promjenjeni (za one zapise koji sigurno postoje u bazi)
-            _db.SaveChanges();
+            //_db.Books.Attach(bookTemp2); // updateujemo samo propertije koji su promjenjeni (za one zapise koji sigurno postoje u bazi)
+            //_db.SaveChanges();
 
+            //VIEWS
+
+            var viewList = _db.BookDetailsFromViews.ToList();
+            var viewList1 = _db.BookDetailsFromViews.FirstOrDefault();
+            var viewList2 = _db.BookDetailsFromViews.Where(x => x.Price > 500);
+
+            var bookRaw = _db.Books.FromSqlRaw("SELECT * FROM dbo.Books").ToList(); // nikad nemoj proslijedjivati direkt parametere (npr u where uslov) jer tada je aplikacija ranjiva na
+                                                                                    // SQL napade (vec preko varijable kao 'string interpolation' i znak $ (i sad smo zasticeni ok SQL napada))!!!
+            // var bookRaw = _db.Books.FromSqlRaw("SELECT * FROM dbo.Books where book_id=1").ToList(); // ranjivo !!
+            int id = 1;
+            var bookTemp1= _db.Books.FromSqlRaw($"SELECT * FROM dbo.Books WHERE Book_Id={id}").ToList();
+
+            var bookSproc = _db.Books.FromSqlInterpolated($"EXEC dbo.getAllBookDetails {id}").ToList(); // call stored procedure
+
+
+            //  .NET 5 and above
+
+            var BookFilter1 = _db.Books.Include(e => e.BookAuthors.Where(x => x.Author_Id == 1)).ToList(); // filtriranje je moguce po kolekciji a ne i po entitetu (BookAuthors je kolekcija)
+
+            var BookFilter2 = _db.Books.Include(e => e.BookAuthors.OrderByDescending(x => x.Author_Id).Take(2)).ToList();
 
             return RedirectToAction(nameof(Index));
         }
